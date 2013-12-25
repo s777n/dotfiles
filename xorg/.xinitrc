@@ -11,9 +11,15 @@ if [ -d /etc/X11/xinit/xinitrc.d ]; then
   unset f
 fi
 
+[[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
+
+dunst&
+redshift -l 59.94:30.315&
+linconnect-server & 
+
 # exec gnome-session
 # exec startkde
 # exec startxfce4
 exec i3
 # ...or the Window Manager of your choice
-twmnd&
+#twmnd&
