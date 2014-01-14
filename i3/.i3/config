@@ -166,3 +166,5 @@ bindsym XF86AudioLowerVolume   exec amixer  -- sset Master playback 0.75dB+
 bindsym XF86MonBrightnessUp    exec  xbacklight -inc 10
 bindsym XF86MonBrightnessDown  exec  xbacklight -dec 10
 bindsym Print                  exec  scrot
+
+for_window [class="^.*"] border pixel 1
