@@ -1,0 +1,3 @@
+set showtabline=never
+set go=b
+colorscheme molokai
